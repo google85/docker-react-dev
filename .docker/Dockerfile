@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:latest
 
 # to avoid permission errors, folders must be created first
 RUN mkdir -p /home/node/app/project
