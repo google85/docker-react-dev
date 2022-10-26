@@ -1,8 +1,7 @@
 ## [Docker] react dev environment
 #
-
-# 
-## Steps:
+#
+### Steps:
 
 - developing container:
     ```bash
@@ -30,6 +29,6 @@
     ```bash
     npm start
     ```
-    ==> http://127.0.0.1:3000/
+    ==> http://localhost:3000/
 
 ### Enjoy!
