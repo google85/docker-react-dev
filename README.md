@@ -1,9 +1,5 @@
 ## [Docker] react dev environment
 #
-# pm2 start:
-# pm2 start --name react-chat-firebase npm -- start
-
-
 
 # 
 ## Steps:
@@ -15,7 +11,7 @@
     ./docker-build.sh
     ./docker-run.sh
     ```
--, apoi fiind in container-ul de developing, rulam:
+- and if everything is successful we are running inside container. At this time we can run basic creation of React app commands:
     ```bash
     cd project/
     npx create-react-app .
@@ -23,13 +19,17 @@
     npm i ....
     ```
 
-- pornire:
+- [OPTIONAL] we can override env variables in an `.env` file:
+    ```ini
+    PORT=3000
+    DOMAIN=localhost
+    PUBLIC_URL=http://localhost:3000
+    ```
+
+- starting project inside container:
     ```bash
     npm start
     ```
     ==> http://127.0.0.1:3000/
 
-- [OPTIONAL] se vor seta in `.env` variabilele care overrideaza default-urile, gen:
-    ```ini
-    ...
-    ```
+### Enjoy!
